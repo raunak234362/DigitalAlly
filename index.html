@@ -4,87 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Ally</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
 
     <!-- Hero Banner -->
-    <section class="hero text-center">
-        <h1>Let’s Elevate Your Brand</h1>
-        <a href="#contact" class="btn btn-primary">Get Started</a>
+    <section class="hero bg-cover bg-center h-screen flex items-center justify-center text-black" style="background-image: url('hero-image.jpg');">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold">Let’s Elevate Your Brand</h1>
+            <a href="#contact" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded">Get Started</a>
+        </div>
     </section>
 
     <!-- About Us -->
-    <section class="about text-center">
-        <h2>About Us</h2>
-        <p>At Digital Ally, we provide more than clients expect, delivering long-term solutions.</p>
+    <section class="about py-20 text-center">
+        <h2 class="text-3xl font-semibold">About Us</h2>
+        <p class="mt-4 text-gray-700">At Digital Ally, we provide more than clients expect, delivering long-term solutions.</p>
     </section>
 
     <!-- Services -->
-    <section class="services text-center">
-        <h2>Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Branding</h3>
-                <p>Crafting unique brand identities.</p>
+    <section class="services py-20">
+        <h2 class="text-3xl font-semibold text-center">Our Services</h2>
+        <div class="flex flex-wrap justify-center mt-10">
+            <div class="w-1/3 p-4">
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">Branding</h3>
+                    <p>Crafting unique brand identities.</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Website Design</h3>
-                <p>Creating stunning and functional websites.</p>
+            <div class="w-1/3 p-4">
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">Website Design</h3>
+                    <p>Creating stunning and functional websites.</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Performance Marketing</h3>
-                <p>Driving results through targeted strategies.</p>
+            <div class="w-1/3 p-4">
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">Performance Marketing</h3>
+                    <p>Driving results through targeted strategies.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Case Studies -->
-    <section class="case-studies text-center">
-        <h2>Case Studies</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Project A</h3>
-                <p>Challenge: Increased competition. Solution: Innovative strategy. Results: 30% growth.</p>
+    <section class="case-studies py-20">
+        <h2 class="text-3xl font-semibold text-center">Case Studies</h2>
+        <div class="flex flex-wrap justify-center mt-10">
+            <div class="w-1/2 p-4">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="font-bold">Project A</h3>
+                    <p>Challenge: Increased competition. Solution: Innovative strategy. Results: 30% growth.</p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Project B</h3>
-                <p>Challenge: Low engagement. Solution: Rebranding. Results: 50% increase in engagement.</p>
+            <div class="w-1/2 p-4">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="font-bold">Project B</h3>
+                    <p>Challenge: Low engagement. Solution: Rebranding. Results: 50% increase in engagement.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials text-center">
-        <h2>Testimonials</h2>
-        <blockquote>
-            <p>"Digital Ally transformed our brand!"</p>
-            <footer>- Happy Client</footer>
-        </blockquote>
-        <blockquote>
-            <p>"Their strategies delivered amazing results."</p>
-            <footer>- Satisfied Customer</footer>
-        </blockquote>
+    <section class="testimonials py-20 text-center">
+        <h2 class="text-3xl font-semibold">Testimonials</h2>
+        <div class="mt-10">
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic">
+                <p>"Digital Ally transformed our brand!"</p>
+                <footer>- Happy Client</footer>
+            </blockquote>
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic mt-6">
+                <p>"Their strategies delivered amazing results."</p>
+                <footer>- Satisfied Customer</footer>
+            </blockquote>
+        </div>
     </section>
 
     <!-- Contact Form -->
-    <section id="contact" class="contact text-center">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+    <section id="contact" class="contact py-20 text-center">
+        <h2 class="text-3xl font-semibold">Contact Us</h2>
+        <form class="mt-10 max-w-lg mx-auto">
+            <input type="text" placeholder="Your Name" required class="w-full p-3 border border-gray-300 rounded mb-4">
+            <input type="email" placeholder="Your Email" required class="w-full p-3 border border-gray-300 rounded mb-4">
+            <textarea placeholder="Your Message" required class="w-full p-3 border border-gray-300 rounded mb-4"></textarea>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Send Message</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="bg-gray-800 text-white text-center py-4">
         <p>&copy; 2023 Digital Ally. All rights reserved.</p>
-        <p>Follow us on <a href="#">Social Media</a></p>
+        <p>Follow us on <a href="#" class="text-blue-400">Social Media</a></p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
