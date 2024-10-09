@@ -1,17 +1,26 @@
-const fadeIns = document.querySelectorAll('.fade-in');
+const fadeIns = document.querySelectorAll('.fade-in')
 
+const menuToggle = document.getElementById('menu-toggle')
+const navbarMenu = document.getElementById('navbar-menu')
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); 
-        }
-    });
-}, {
-    threshold: 0.2 
-});
+menuToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('hidden')
+})
 
-fadeIns.forEach(element => {
-    observer.observe(element);
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible')
+        observer.unobserve(entry.target)
+      }
+    })
+  },
+  {
+    threshold: 0.2,
+  },
+)
+
+fadeIns.forEach((element) => {
+  observer.observe(element)
+})

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="./assets/footer-logo-white.png" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Ally</title>
@@ -8,67 +9,197 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-   
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-white w-screen px-5 overflow-x-hidden">
+    <nav class="navbar bg-white shadow-md fixed top-0 left-0 right-0 z-10">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <div class="navbar-brand">
+          <img
+            src="https://thedigitalally.com/public//frontend_assets/images/logo/footer-logo-white.png"
+            alt="Logo"
+            class="w-32"
+          />
+        </div>
+        <!-- Hamburger Menu Button for Mobile View -->
+        <button
+          id="menu-toggle"
+          type="button"
+          title="Toggle Menu"
+          class="block md:hidden focus:outline-none text-gray-800"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div
+          id="navbar-menu"
+          class="navbar-menu hidden md:flex flex-col md:flex-row md:space-x-4"
+        >
+          <ul
+            class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
+          >
+            <li>
+              <a
+                href="#about"
+                class="hover:bg-orange-500 hover:rounded-lg hover:px-2 hover:py-1 hover:text-white"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="hover:bg-orange-500 hover:rounded-lg hover:px-2 hover:py-1 hover:text-white"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#case-studies"
+                class="hover:bg-orange-500 hover:rounded-lg hover:px-2 hover:py-1 hover:text-white"
+                >Case Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="hover:bg-orange-500 hover:rounded-lg hover:px-2 hover:py-1 hover:text-white"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:bg-orange-500 hover:rounded-lg hover:px-2 hover:py-1 hover:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero Banner -->
     <section
       class="hero bg-cover bg-center h-screen flex items-center justify-center text-black"
     >
-      <div class="fade-in" data-taos-offset="400">
-        <h1 class="text-5xl font-bold">Let’s Elevate Your Brand</h1>
-        <a
-          href="#contact"
-          class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded"
-          >Get Started</a
-        >
+      <div
+        class="fade-in flex flex-col gap-10 md:gap-10 md:flex-row items-center"
+        data-taos-offset="400"
+      >
+        <div>
+          <h1 class="text-5xl font-bold">
+            Digital Ally For Businesses <br />
+            <span class="text-orange-500">Your Brand</span>
+          </h1>
+          <a
+            href="#contact"
+            class="mt-4 inline-block bg-orange-500 hover:text-lg text-white py-2 px-4 rounded"
+            >Get Started</a
+          >
+        </div>
+        <div>
+          <img src="./assets/DAbanner.png" alt="Hero" />
+        </div>
       </div>
     </section>
 
     <!-- About Us -->
-    <section class="about py-20 text-center">
+    <section id="about" class="about py-20 text-center">
       <div class="fade-in" data-taos-offset="400">
-        <h2 class="text-3xl font-semibold">About Us</h2>
-        <p class="mt-4 text-gray-700">
-          At Digital Ally, we provide more than clients expect, delivering
-          long-term solutions.
-        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 items-start justify-center">
+          <img
+            src="https://thedigitalally.com/public//frontend_assets/images/home/whoweare.webp"
+            alt=""
+          />
+          <div>
+            <h2 class="text-3xl font-semibold">About Us</h2>
+            <p class="mt-4 text-md text-left text-gray-700">
+              <span class="text-orange-500 font-bold">Digital Ally</span> is a young, creative, gutsy and committed marketing
+              company that wants its clients to always expect the extra from it.
+            </p>
+            <p class="text-left mt-5">
+              Our creative minds are unleashed. And this lets us take up
+              challenges without fearing limitations. We are a team of hard core
+              nerds and we are bringing more of you that marketing advantage. We
+              are your one stop marketing solution for the digital age. We offer
+              Value to the brands that are owned by you but driven by us.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section class="services py-20">
+    <section id="services" class="services py-20">
       <h2
         class="text-3xl font-semibold text-center fade-in"
         data-taos-offset="400"
       >
         Our Services
       </h2>
-      <div class="flex flex-wrap justify-center mt-10">
-        <div class="w-1/3 p-4 fade-in" data-taos-offset="400">
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <div class="flex flex-col md:flex-row justify-center mt-10">
+        <div class="md:w-1/3 p-4 fade-in" data-taos-offset="400">
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:bg-orange-300 hover:text-white transition duration-300 ease-in-out"
+          >
             <h3 class="text-xl font-bold">Branding</h3>
+            <img
+              class="w-full object-cover h-56 my-3"
+              src="https://imgs.search.brave.com/M6iGkzLv01cyXGhciua8xZ9jEiuLXvUmxEMJ_6iGKkM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wcm9mZXNzaW9u/YWwtYnJhbmRpbmct/aW1hZ2UtY29ycG9y/YXRlLWlkZW50aXR5/XzExOTkzOTQtMTA4/MDM5LmpwZz9zaXpl/PTYyNiZleHQ9anBn"
+              alt=""
+            />
             <p>Crafting unique brand identities.</p>
           </div>
         </div>
-        <div class="w-1/3 p-4 fade-in" data-taos-offset="400">
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="md:w-1/3 p-4 fade-in" data-taos-offset="400">
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:bg-orange-300 hover:text-white transition duration-300 ease-in-out"
+          >
             <h3 class="text-xl font-bold">Website Design</h3>
+            <img
+              class="w-full object-cover h-56 my-3"
+              src="https://imgs.search.brave.com/ejAlgzgRb6F83Yq6BVaFAfEn5adJ8g0jQ0qnjsiUzso/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by93/ZWItZGVzaWduXzUz/ODc2LTE2NzA3MC5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw"
+              alt=""
+            />
             <p>Creating stunning and functional websites.</p>
           </div>
         </div>
-        <div class="w-1/3 p-4 fade-in" data-taos-offset="400">
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <div class="md:w-1/3 p-4 fade-in" data-taos-offset="400">
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 text-center hover:bg-orange-300 hover:text-white transition duration-300 ease-in-out"
+          >
             <h3 class="text-xl font-bold">Performance Marketing</h3>
+            <img
+              class="w-full object-cover h-56 my-3"
+              src="https://imgs.search.brave.com/16swoceMcfgAPvWdkyayBDXPR6ws54jvzFLpkctqABE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTI3/MDMzNTgwL3Bob3Rv/L21hcmtldC1yZXNl/YXJjaC1idXNpbmVz/cy1yZXBvcnRzLW9u/LWxhcHRvcC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VTc2/U3FpdTZrUVRFNWx4/MGYxTHhnRXk0YWRi/S3l1cnVta240aFM2/NHIxaz0"
+              alt=""
+            />
             <p>Driving results through targeted strategies.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Case Studies -->
-    <section class="case-studies py-20">
+    <!-- Case Study -->
+    <section id="case-studies" class="case-studies py-20">
       <h2
         class="text-3xl font-semibold text-center fade-in"
         data-taos-offset="400"
@@ -98,7 +229,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials py-20 text-center">
+    <section id="testimonials" class="testimonials py-20 text-center">
       <h2 class="text-3xl font-semibold fade-in" data-taos-offset="400">
         Testimonials
       </h2>
@@ -120,7 +251,7 @@
       </div>
     </section>
 
-    <!-- Contact Form -->
+    <!-- Contact Us -->
     <section id="contact" class="contact py-20 text-center">
       <h2 class="text-3xl font-semibold fade-in" data-taos-offset="400">
         Contact Us
@@ -148,7 +279,7 @@
         ></textarea>
         <button
           type="submit"
-          class="bg-blue-500 text-white py-2 px-4 rounded fade-in"
+          class="bg-orange-500 text-white py-2 px-4 rounded fade-in"
           data-taos-offset="400"
         >
           Send Message
@@ -157,9 +288,66 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
-      <p>&copy; 2023 Digital Ally. All rights reserved.</p>
-      <p>Follow us on <a href="#" class="text-blue-400">Social Media</a></p>
+    <footer class="text-black py-4 flex md:mx-36">
+      <div
+        class="text-left md:grid md:grid-cols-4 justify-center items-start gap-10"
+      >
+        <div class="flex flex-wrap gap-5">
+          <img
+            src="https://thedigitalally.com/public//frontend_assets/images/logo/footer-logo-white.png"
+            class="w-44"
+            alt=""
+          />
+          <p>
+            Founded in 2023, Digital Ally is a young, creative, gutsy and
+            committed marketing company that wants its clients to always expect
+            the extra from it.
+          </p>
+          <p>
+            &copy; 2024
+            <span class="text-orange-500 font-bold">Digital Ally.</span> All
+            rights reserved.
+          </p>
+        </div>
+        <div class="mt-5 md:mt-0">
+          <h3 class="font-bold text-lg">Quick Links</h3>
+          <ul class="mt-4 ml-5 list-disc">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mt-4 md:ml-0 ml-5 list-disc">
+            <li>
+              <a href="https://thedigitalally.com/uiux">UI/UX Design</a>
+            </li>
+            <li>
+              <a href="https://thedigitalally.com/webdesigndevelopement"
+                >Website Development</a
+              >
+            </li>
+            <li>
+              <a href="https://thedigitalally.com/digitalmarketing"
+                >Digital Marketing</a
+              >
+            </li>
+            <li>
+              <a href="https://thedigitalally.com/graphicdesgining"
+                >Graphic Designing</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">Find Us</h3>
+          <p class="mt-4">Hyderabad, Telangana</p>
+          <p>+91 9110700641</p>
+          <p>info@thedigitalally.com</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
