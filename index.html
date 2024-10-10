@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Ally</title>
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
@@ -100,7 +100,7 @@
 
     <!-- Hero Banner -->
     <section
-    id="hero"
+      id="hero"
       class="hero bg-cover bg-center h-screen flex items-center justify-center text-black"
     >
       <div
@@ -125,27 +125,32 @@
     </section>
 
     <!-- About Us -->
-    <section id="about" class="about py-20 text-center">
+    <section id="about" class="about md:px-32 text-center">
       <div class="fade-in" data-taos-offset="400">
-        <div class="grid grid-cols-1 sm:grid-cols-2 items-start justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-20 sm:gap-0 items-start justify-center">
           <img
             src="https://thedigitalally.com/public//frontend_assets/images/home/whoweare.webp"
             alt=""
           />
-          <div>
-            <h2 class="text-3xl font-semibold">About Us</h2>
-            <p class="mt-4 text-md text-left text-gray-700">
-              <span class="text-orange-500 font-bold">Digital Ally</span> is a
-              young, creative, gutsy and committed marketing company that wants
-              its clients to always expect the extra from it.
-            </p>
-            <p class="text-left mt-5">
-              Our creative minds are unleashed. And this lets us take up
-              challenges without fearing limitations. We are a team of hard core
-              nerds and we are bringing more of you that marketing advantage. We
-              are your one stop marketing solution for the digital age. We offer
-              Value to the brands that are owned by you but driven by us.
-            </p>
+          <div class="flex flex-col">
+            <div>
+              <h2 class="text-3xl font-semibold">About Us</h2>
+            </div>
+            <div class="my-10">
+              <p class="mt-4 text-md text-left text-gray-700">
+                <span class="text-orange-500 font-bold">Digital Ally</span> is a
+                young, creative, gutsy and committed marketing company that
+                wants its clients to always expect the extra from it.
+              </p>
+              <p class="text-left mt-5">
+                Our creative minds are unleashed. And this lets us take up
+                challenges without fearing limitations. We are a team of hard
+                core nerds and we are bringing more of you that marketing
+                advantage. We are your one stop marketing solution for the
+                digital age. We offer Value to the brands that are owned by you
+                but driven by us.
+              </p>
+            </div>
           </div>
         </div>
       </div>
